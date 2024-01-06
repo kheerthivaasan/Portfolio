@@ -1,0 +1,258 @@
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 220px;
+    height: 200px;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem; /* Match expertise section font size */
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: bold; /* Make it bold */
+}
+
+.sub-text {
+    font-size: 1.6rem; /* Match expertise section font size */
+    color: #e3d9b2;
+    font-weight: bold; /* Make it bold */
+}
+
+
+/* Content Section Styles */
+.content,
+.expertise-section,
+.education-section,
+.projects-section {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.content h2,
+.expertise-section h2,
+.education-section h2,
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.content a,
+.expertise-description a,
+.project-description a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.content a:hover,
+.expertise-description a:hover,
+.project-description a:hover {
+    text-decoration: underline;
+}
+
+/* Expertise Section Styles */
+.expertise-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    margin-bottom: 2rem;
+}
+
+.category h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.description {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.expertise-description strong,
+.expertise-description p,
+.expertise-description li {
+    margin-bottom: 0.5rem;
+}
+
+.expertise-description strong {
+    color: #3498db;
+}
+
+.expertise-description p {
+    color: #555;
+}
+
+.expertise-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expertise-description li:before {
+    content: '\2022';
+    color: #e74c3c;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Education Section Styles */
+.education-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 2rem;
+}
+
+.education-list h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.education-list .degree,
+.education-list .percentage,
+.education-list p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.education-list strong {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.education-list p {
+    color: #555;
+}
+
+/* Project Section Styles */
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-item,
+.project-description,
+.project-skills {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.project-item strong,
+.project-description strong {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.project-item,
+.project-description p {
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+    }
+}
